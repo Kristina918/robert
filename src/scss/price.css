@@ -1,0 +1,59 @@
+.price {
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.price-block {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  max-width: 920px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 500px;
+  background-color: white;
+  box-shadow: 0px 0px 27px 14px rgba(34, 60, 80, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.font-title {
+  font-size: 120px;
+  text-align: center;
+  padding-top: 30px;
+  font-family: Cancellaresca;
+  font-weight: 300;
+  color: #66359c;
+}
+
+.price-flex {
+  display: flex;
+  justify-content: space-between;
+  min-width: 700px;
+  max-width: 700px;
+}
+
+.procedure-title2 {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.procedure-title {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.procedure-title2 {
+  max-width: 580px;
+}
+
+.mb {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #8b75a7;
+  font-weight: 500;
+}

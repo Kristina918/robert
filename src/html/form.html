@@ -1,0 +1,74 @@
+<section class="form">
+  <div class="form-bg container">
+    <div class="form-block">
+      <h3 class="reviews-block-title" data-lang="text7">TERMIN BUCHEN</h3>
+      <p data-lang="text8">Geben Sie uns Ihre Nummer und wir antworten Ihnen gerne.</p>
+
+      <form class="form-size" action="/files/send.php" method="POST">
+        <div class="input-group tooltip-hide input-group-name">
+          <input type="text" name="name" placeholder="Name" />
+        </div>
+        <div class="input-group tooltip-hide input-group-date">
+          <input
+            id="mydata"
+            name="date"
+            maxlength="10"
+            type="text"
+            placeholder="Geburtsdatum"
+          />
+        </div>
+        <div class="input-group tooltip-hide input-group-phone">
+          <input type="text" name="phone" placeholder="Telefon" />
+        </div>
+        <div class="input-group tooltip-hide input-group-email">
+          <input type="email" name="email" placeholder="E-mail" />
+        </div>
+
+        <div class="input-group tooltip-hide address input-group-address">
+          <input type="text" name="address" placeholder="Adresse" />
+        </div>
+        <p data-lang="text9">Für welchen Eingriff, Tag und Uhrzeit möchten Sie buchen?</p>
+        <div
+        
+          class="input-group2 procedure input-group-procedure"
+        >
+          <span style="margin-right: 20px" data-lang="text10" >Eingriff</span
+          ><input class="" type="text" name="procedure" placeholder="Eingriff" />
+        </div>
+        <div
+         
+          class="input-group2 day input-group-day"
+        >
+          <span style="margin-right: 20px" data-lang="text13">Tag</span
+          >
+          <input placeholder="Select your date" type="text" name="day" id="datepicker" value="" class="calendar input-group-day">
+          <!--<input class="input-group-day" type="date" name="day" required />-->
+        </div>
+        <div
+         
+          class="input-group2 time"
+        >
+          <span style="margin-right: 20px" data-lang="text12">Uhrzeit</span>
+          <input class="input-group-time" type="time" id="time" name="time" required />
+        </div>
+
+        <p style="max-width: 452px; grid-column: 1/3" data-lang="text11">
+          Wenn der gewünschte Tag und die gewünschte Uhrzeit frei sind, wird Ihr
+          Termin bestätigt. <br />
+          Wenn es für diesen Tag und diese Uhrzeit nicht möglich ist, einen
+          Termin zu vereinbaren, werden Ihnen andere Optionen angeboten. <br />
+          Die Bezahlung erfolgt in bar beim Besuch des Salons. <br />
+          * Bevor Sie in den Salon kommen, warten Sie auf die Bestätigung des
+          Termins.
+        </p>
+
+     
+        <div class="btn-form">
+          <button type="submit" class="btn button-termin grid-btn" data-lang="text16">
+            SENDEN
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

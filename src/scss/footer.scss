@@ -1,0 +1,49 @@
+.footer{
+    background-color: #8b75a7;
+    padding-bottom: 20px;
+}
+.footer-block{
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+.maps{
+    max-width: 50%;
+    max-height: 350px;
+}
+.footer-adres-block{
+    
+    
+}
+.footer-adres-block ul{
+    color: white;
+    
+}
+.footer-adres-block ul li{
+ margin-bottom: 10px;
+ color: #ffffff !important;
+}
+.logo-footer{
+    margin: 0 auto;
+    width: 80%;
+}
+.font-2{
+    font-size: 20px;
+    font-family: Cancellaresca Script Regular;
+    font-weight: 300;
+    color: #ffffff;
+}
+.footer-bottom p, .footer-bottom a{
+    color: #ffffff;
+    font-size: 14px;
+}
+.footer-bottom{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.footer-adres-block ul li span{
+    margin-right: 20px;
+}

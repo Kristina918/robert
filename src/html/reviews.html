@@ -1,0 +1,95 @@
+<div class="reviews-block">
+  <h3 class="reviews-block-title" data-lang="text14">BEWERTUNGEN</h3>
+  <div class="reviews-corusel">
+    <div class="testimonials container">
+      <div class="scroller">
+        <div class="item">
+          <div class="item-content">
+            <div class="reviews-img">
+              <img src="@img/reviewsimg1.jpg" alt="" />
+            </div>
+            <div class="reviews-text">
+              <h3 >Jessika Mehler</h3>
+              <p data-lang="text15">
+                Ich möchte mich bei allen Mitarbeitern des Salons für ihre
+                Freundlichkeit und warme Atmosphäre bedanken. <br />
+
+                Ich habe bereits meinen Sohn hierhergebracht, der sich auch
+                gerne in den geschickten Händen von Julias Friseurin befand.
+                <br />
+
+                Wir sind jetzt Ihre Kunden!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-content">
+            <div class="reviews-img">
+              <img src="@img/reviewsimg2.jpg" alt="" />
+            </div>
+            <div class="reviews-text">
+              <h3>Gertrud Beich</h3>
+              <p data-lang="text17">
+                Die Meister kennen sich aus. <br />
+                Alles schnell und hochwertig. <br />
+
+                Und vor allem mit einem Lächeln. <br />
+                Vielen Dank für diese Einstellung zur Arbeit. <br />
+                Ich empfehle!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-content">
+            <div class="reviews-img">
+              <img src="@img/reviewsimg3.jpg" alt="" />
+            </div>
+            <div class="reviews-text">
+              <h3>Kevin Achen</h3>
+              <p data-lang="text18">
+                Guten Tag! <br />
+
+                Ich möchte Ihnen für die geleistete Arbeit und die
+                Professionalität der Maniküre danken! <br />
+
+                Mir eine hygienische Maniküre gemacht. <br />
+
+                Alles super!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="btn prev">&lt;</span>
+      <span class="btn next">&gt;</span>
+    </div>
+  </div>
+  <script>
+    const testimonials = document.querySelector(".testimonials");
+    const scroller = testimonials.querySelector(".scroller");
+    const nextBtn = testimonials.querySelector(".btn.next");
+    const prevBtn = testimonials.querySelector(".btn.prev");
+    const itemWidth = testimonials.querySelector(".item").clientWidth;
+
+    nextBtn.addEventListener("click", scrollToNextItem);
+    prevBtn.addEventListener("click", scrollToPrevItem);
+
+    function scrollToNextItem() {
+      if (scroller.scrollLeft < scroller.scrollWidth - itemWidth)
+        scroller.scrollBy({ left: itemWidth, top: 0, behavior: "smooth" });
+      else scroller.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+    }
+    function scrollToPrevItem() {
+      if (scroller.scrollLeft != 0)
+        scroller.scrollBy({ left: -itemWidth, top: 0, behavior: "smooth" });
+      else
+        scroller.scrollTo({
+          left: scroller.scrollWidth,
+          top: 0,
+          behavior: "smooth",
+        });
+    }
+  </script>
+</div>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+@@include('html/head.html', {
+  "title":  "NaRo"
+})
+
+<style type="text/css">
+	#preloader_malc {
+
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, .6);
+		z-index: 99;
+    background: #fff;
+		width: 100vw;
+		height: 100vh;
+
+
+    animation: opacity 1.15s linear 5s;
+	}
+@keyframes pulse {
+  0%{
+  opacity: 1;
+  }
+  50%{
+  opacity: 0;
+
+  }
+  100%{
+  opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0%{
+  opacity: 1;
+  }
+ 
+  100%{
+  opacity: 0;
+  }
+}
+	#preloader_malc div {
+	
+		
+		
+	display: flex;
+  justify-content: center;
+  align-items: center;
+
+		animation: pulse 2s linear ;
+    
+    animation-iteration-count: 2;
+		position: fixed;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto
+	}
+</style>
+<body>
+  <img class="bg-img" src="@img/bg.jpg" alt="">
+    @@include('html/header.html', {}) 
+   <main>
+    @@include('html/about.html', {}) 
+    @@include('html/gallery.html', {})
+
+@@include('html/form.html', {})
+    @@include('html/reviews.html', {}) 
+    @@include('html/anzeigen.html', {}) 
+   </main>
+   @@include('html/footer.html', {}) 
+    <script src="js/app.min.js" charset = "UTF-8"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+
+</body>
+</html>

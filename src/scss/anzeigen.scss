@@ -1,0 +1,20 @@
+.anzeigen {
+    background-color: #ffffffc1;
+    padding-top: 120px;
+    position: relative;
+    padding-bottom: 140px;
+}
+.anzeigen-block {
+    max-width: 90%;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+display: flex;
+gap: 40px;
+align-items: center;
+justify-content: center;
+    margin: 0 auto;
+    .img-block{
+    max-width: 300px;
+    }
+}

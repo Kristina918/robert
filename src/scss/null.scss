@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    
+
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(/img/bg.jpg);
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #fffefe;
+   
+  
+  
+}
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.fa{
+    color: #ffffff;
+}
+.font{
+
+font-size: 59px;
+    font-family: Cancellaresca Script Regular;
+    font-weight: 300;
+    color: #66359c;
+}
+details summary::-webkit-details-marker {
+    display:none;
+  }
+  .menu-link2:hover{
+    
+    border: 2px solid #ffffff !important;
+    border-radius: 25px !important;
+
+  }
